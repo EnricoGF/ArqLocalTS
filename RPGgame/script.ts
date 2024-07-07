@@ -56,14 +56,13 @@ class Player {
         this.playerAttack = attack
     }
 
-    playerTookDamageFunc():number{
-        return this.playerHealth - playerTookDamageNumber
-    }
-
     playerDealDamage():number{
         return this.playerAttack
     }
 
+    playerTookDamageFunc():number{
+        return this.playerHealth - playerTookDamageNumber
+    }
 }
 
 class Enemy{
@@ -79,7 +78,7 @@ class Enemy{
         return this.enemyAttack
     }
 
-    enemyHealthFunc():number{
+    enemyTookDamageFunc():number{
         return this.enemyHealth - playerDealDamageNumber
     }
 }
