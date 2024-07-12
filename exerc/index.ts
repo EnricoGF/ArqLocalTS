@@ -31,8 +31,6 @@ function comprarProduto ():void{
         case 5:
             carrinhoDeCompras.push(myBebida2)
             break
-        default:
-            console.log(`Produto invalido`)
     }
 }
 
@@ -59,7 +57,7 @@ const resposta:number = Number((readlineSync.question(pergunta)))
 
 let constinuaPrompt:boolean = true
 
-while (constinuaPrompt = true){
+while (constinuaPrompt == true){
     switch(resposta){
         case 1: 
             comprarProduto()
